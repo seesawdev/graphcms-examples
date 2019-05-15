@@ -1,13 +1,13 @@
 import { request } from 'graphql-request'
 
-const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
+const GRAPHCMS_API = 'https://api-uswest.graphcms.com/v1/cjvn7atvc0oi101et020ivlr3/master'
 
 const query = `{
   posts {
     id
     slug
     title
-    coverImage {
+    image {
       handle
     }
     content
@@ -24,7 +24,7 @@ const query = `{
 
 export default {
   getSiteData: () => ({
-    title: 'GraphCMS Starter blog'
+    title: 'Everybody Leave'
   }),
   getRoutes: async () => {
     const {
